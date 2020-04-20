@@ -1,5 +1,5 @@
 # RoundRobinWithWeight
-带权重的round robin 算法
+带权重的round robin 算法：最大公约数&取模运算
 
 # 结构体
 type URL struct {
