@@ -52,10 +52,11 @@ func getGCD() int64 {
 
 //获取当前轮次的url
 func getUrl() *URL {
+	gcd := getGCD()
 	for {
 		index = (index + 1) % int64(len(urls))
 		if index == 0 {
-			weitht = weitht - getGCD()
+			weitht = weitht - gcd
 			if weitht <= 0 {
 				weitht = getMaxWeight()
 				if weitht == 0 {
